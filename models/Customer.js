@@ -30,7 +30,6 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false,
             validate: {
                 notEmpty: true,
-                isNumeric: true
             }
         },
         address: {
@@ -54,7 +53,7 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false,
             validate: {
                 notEmpty: true,
-                isAlpha: true,
+                isAlpha: true
             }
         },
         zip: {
@@ -65,9 +64,7 @@ module.exports = function(sequelize, DataTypes) {
         },
         fbLink: {
             type: DataTypes.STRING,
-            validate: {
-                isURL: true
-            }
+            allowNull: true,
         },
         birthday: {
             type: DataTypes.STRING,
@@ -102,7 +99,7 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: true,
         },
-        versatility: {
+        flex: {
             type: DataTypes.STRING,
             allowNull: false,
         },

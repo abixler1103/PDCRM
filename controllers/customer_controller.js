@@ -55,7 +55,7 @@ app.post("/register", function(req, res) {
             accessorypref: req.body.accessorypref,
             stylepref: req.body.stylepref,
             text: req.body.text,
-            versatility: req.body.versatility,
+            flex: req.body.flex,
             mixedmetals: req.body.mixedmetals,
             rosegold: req.body.rosegold,
             trendy: req.body.trendy,
@@ -63,7 +63,7 @@ app.post("/register", function(req, res) {
             cpw: req.body.cpw
         }).then(function(dbCustomer) {
             // calc
-            var versatility_value = req.body.versatility; // 5
+            var flex_value = req.body.flex;
             var mixedmetals_value = req.body.mixedmetals;
             var rosegold_value = req.body.rosegold;
             var trendy_value = req.body.trendy;
@@ -71,7 +71,7 @@ app.post("/register", function(req, res) {
             var cpw_value = req.body.cpw;
 
             // calc
-            val = +versatility_value + +mixedmetals_value + +rosegold_value + +trendy_value + +flattering_value + +cpw_value;
+            val = +flex_value + +mixedmetals_value + +rosegold_value + +trendy_value + +flattering_value + +cpw_value;
 
             console.log(val);
 
@@ -85,26 +85,6 @@ app.post("/register", function(req, res) {
                 res.json(JSON.stringify({ jewelry: 'Sable', image: 'https://www.premierdesigns.com/AshleyBixler/101/retail-catalog/shop-by-style/boho/sable-9b06ae7a' }));
             };
 
-
-
-        /*
-
-                                    switch (+val) {
-                                        case (val <= 11):
-                                            res.json({ jewelry: 'Hoop-Hoop-Hooray', image: 'https://www.premierdesigns.com/AshleyBixler/101/retail-catalog/shop-by-style/boho/hoop' });
-                                            break;
-                                        case (val >= 11 && val < 16):
-                                            res.json({ jewelry: 'Sway', image: 'https://www.premierdesigns.com/AshleyBixler/101/retail-catalog/shop-by-style/boho/sway' });
-                                            break;
-                                        case (val >= 16 && val < 21):
-                                            res.json({ jewelry: 'Cashmere', image: 'https://www.premierdesigns.com/AshleyBixler/101/retail-catalog/shop-by-style/boho/cashmere' });
-                                            break;
-                                        case (val >= 21):
-                                            console.log("woot");
-                                            res.json(JSON.stringify({ jewelry: 'Sable', image: 'https://www.premierdesigns.com/AshleyBixler/101/retail-catalog/shop-by-style/boho/sable-9b06ae7a' }));
-
-                                    }
-        */
 
         // redirect
     })

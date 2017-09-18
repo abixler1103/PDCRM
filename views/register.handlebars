@@ -1,0 +1,248 @@
+<div id="registerPage" style="background-image: url(img/05-white-brick.png);opacity: .8;">
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 style="text-align: left;font-size: 40px;">Your Style File</h2>
+            </div>
+        </div>
+    </div>
+    <hr width="75%">
+    <!-- form -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-7 col-lg-6">
+                <form action="/api/register" method="POST" id="form" class="form-vertical" role="form">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="input-first" class="control-label">First Name:</label>
+                            <input class="form-control" id="first-name" name="input-first" placeholder="Whitney">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-last" class="control-label">Last Name:</label>
+                            <input type="text" class="form-control mask-date" id="last-name" name="input-last" placeholder="Jones">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-email" class="control-label">Email:</label>
+                            <input type="text" class="form-control mask-money" id="email" name="input-email" placeholder="johndoe@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-phone" class="control-label">Phone Number:</label>
+                            <input type="text" class="form-control" id="phone" name="input-phone" placeholder="214-555-5555">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-fblink" class="control-label">Facebook Link:</label>
+                            <input type="text" class="form-control" id="fblink" name="input-fblink" placeholder="https://www.facebook.com/ashley.e.bixler">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-birthday" class="control-label">Birthday:</label>
+                            <input type="text" class="form-control" id="birthday" name="input-birthday" placeholder="04/12/73">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-accessorypref" class="control-label">Favorite Jewelry Accessory:</label>
+                            <select class="form-control" id="accessorypref" name="input-accessorypref">
+                                <option value="">Select</option>
+                                <option value="necklace">Necklace</option>
+                                <option value="eariings">Earings</option>
+                                <option value="arm_party">Arm Party</option>
+                                <option value="rings">Rings</option>
+                            </select>
+                        </div>
+            </div>
+            <div class="col-xs-12 col-sm-10 col-md-7 col-lg-6">
+                <div class="form-group">
+                    <label for="input-address" class="control-label">Street Address:</label>
+                    <input type="text" class="form-control" id="address" name="input-address" placeholder="1628 Diamond Way">
+                </div>
+                <div class="form-group">
+                    <label for="input-address2" class="control-label">Apartment/Suite/Building:</label>
+                    <input type="text" class="form-control" id="address2" name="input-address2" placeholder="#104">
+                </div>
+                <div class="form-group">
+                    <label for="input-city" class="control-label">City:</label>
+                    <input type="text" class="form-control" id="city" name="input-city" placeholder="Monroe">
+                </div>
+                <div class="form-group">
+                    <label for="input-state" class="control-label">State:</label>
+                    <input type="text" class="form-control" id="state" name="input-state" placeholder="Texas">
+                </div>
+                <div class="form-group">
+                    <label for="input-zip" class="control-label">Zip:</label>
+                    <input type="text" class="form-control" id="zip" name="input-zip" placeholder="75118">
+                </div>
+                <div class="form-group">
+                    <label for="input-anniversary" class="control-label">Anniversary:</label>
+                    <input type="text" class="form-control" id="anniversary" name="input-anniversary" placeholder="11/21/10">
+                </div>
+                <div class="form-group">
+                    <label for="input-stylepref" class="control-label">Go-To Style:</label>
+                    <select class="form-control" id="stylepref" name="input-stylepref">
+                        <option value="">Select</option>
+                        <option value="layers">Layers</option>
+                        <option value="classic">Classic</option>
+                        <option value="statement">Statement Pieces</option>
+                        <option value="sentamental">Sentamental (sayings/quotes/charms)</option>
+                        <option value="glamour">Glitzy Glamour</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h4>On a scale of 1-5 (1 = doesn't matter, 5 = YES, please!) rate the following:</h4>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="form-group">
+                    <label for="input-versatility" class="control-label">Versatility of Accessory:</label>
+                    <select class="form-control" id="versatilty" name="input-versatilty">
+                        <option value="">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="input-mixedmetals" class="control-label">Mixed Metals</label>
+                    <select class="form-control" id="mixedmetals" name="input-mixedmetals">
+                        <option value="">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="form-group">
+                    <label for="input-rosegold" class="control-label">Rose Gold</label>
+                    <select class="form-control" id="rosegold" name="input-rosegold">
+                        <option value="">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="input-trendy" class="control-label">Trendy</label>
+                    <select class="form-control" id="trendy" name="input-trendy">
+                        <option value="">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="form-group">
+                    <label for="input-flattering" class="control-label">Flattering</label>
+                    <select class="form-control" id="flattering" name="input-flattering">
+                        <option value="">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="input-cpw" class="control-label">Cost Per Wear (CPW)</label>
+                    <select class="form-control" id="cpw" name="input-cpw">
+                        <option value="">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group">
+                    <label for="input-text" class="control-label">Comments/Notes:</label>
+                    <textarea type="text" class="form-control" id="textbox" placeholder="..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-lg" style="background-color:#6AD5C3;" id="profile">Submit</button>
+                    <!-- <div id="snackbar">Your application has been submitted!</div> -->
+                </div>
+            </div>
+            </fieldset>
+            </form>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script>
+        $("#profile").on("click", function(event) {
+            event.preventDefault();
+
+
+            var customer = {
+                firstName: $("#first-name").val(),
+                lastName: $("#last-name").val(),
+                email: $("#email").val(),
+                cellPhone: $("#phone").val(),
+                address: $("#address").val(),
+                address2: $("#address2").val(),
+                city: $("#city").val(),
+                state: $("#state").val(),
+                zip: $("#zip").val(),
+                fbLink: $("#fblink").val(),
+                birthday: $("#birthday").val(),
+                anniversary: $("#anniversary").val(),
+                accessorypref: $("#accessorypref").val(),
+                stylepref: $("#stylepref").val(),
+                text: $("#textbox").val(),
+                versatility: $("#versatility").val(),
+                mixedmetals: $("#mixedmetals").val(),
+                rosegold: $("#rosegold").val(),
+                trendy: $("#trendy").val(),
+                flattering: $("#flattering").val(),
+                cpw: $("#cpw").val().
+            };
+            // var customer = {
+            //     firstName: "Ashley",
+            //     lastName: "Bixler",
+            //     email: "ab@gmail.com",
+            //     cellPhone: "4156544517",
+            //     address: "9350 Riverwalk Ln",
+            //     address2: "",
+            //     city: "Irving",
+            //     state: "Tx",
+            //     zip: "75063",
+            //     fbLink: "www.facebook.com",
+            //     birthday: "11/03/1981",
+            //     anniversary: "11/21/2010",
+            //     accessorypref: "Necklace",
+            //     stylepref: "Classic",
+            //     text: "",
+            //     versatility: "4",
+            //     mixedmetals: "2",
+            //     rosegold: "5",
+            //     trendy: "2",
+            //     flattering: "4",
+            //     cpw: "5"
+
+            // };
+
+            let recommendation = {};
+
+            axios.post('/register', customer)
+                .then(function(response) {
+                    recommendation = JSON.parse(response.data);
+                    console.log(recommendation);
+                    window.location.replace('/results?firstName=' + customer.firstName + '&jewelry=' + recommendation.jewelry + '&image=' + recommendation.image);
+
+                })
+                .catch(function(error) {
+                    console.log(error);
+                });
+
+
+        });
+        </script>

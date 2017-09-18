@@ -1,0 +1,26 @@
+{
+  "name": "pd_crm",
+  "version": "1.0.0",
+  "description": "Customer database for Premier Designs Jewlery Distributors",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Ashley Bixler",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.18.1",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.9",
+    "moment": "^2.18.1",
+    "mysql": "^2.14.1",
+    "mysql2": "^1.4.2",
+    "path": "^0.12.7",
+    "sequelize": "^4.8.3"
+  },
+  "devDependencies": {}
+}
